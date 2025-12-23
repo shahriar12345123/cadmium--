@@ -30,68 +30,85 @@
 <body class="bg-darkbg text-white font-sans bg-black">
 
     <!-- ================= NAVBAR ================= -->
-    <header class="border-b border-white/10 bg-black">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="bg-orange-500 text-black font-bold px-3 py-1">Cd</div>
-                <span class="font-semibold text-3xl tracking-wide">
-                    CADMIUM<span class="text-orange-500">CORE</span>
-                </span>
-            </div>
 
-            <nav class="hidden md:flex gap-8 text-sm text-gray-300">
-                <a href="#" class="hover:text-primary">Home</a>
-                <a href="#about" class="hover:text-primary">About</a>
-                <a href="#services" class="hover:text-primary">Services</a>
-                <a href="#operations" class="hover:text-primary">Operations</a>
-                <a href="#contact" class="hover:text-primary">Contact</a>
-            </nav>
-
-            <button
-                class="border border-orange-500 text-orange-500 px-4 py-2 text-sm hover:border-sky-500 hover:bg-black hover:text-sky-500 transition">
-                GET QUOTE
-            </button>
+    
+    <header class="border-b border-white/10 bg-black fixed w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="bg-orange-500 text-black font-bold px-3 py-1">Cd</div>
+            <span class="font-semibold text-3xl tracking-wide">
+                CADMIUM<span class="text-orange-500">CORE</span>
+            </span>
         </div>
-    </header>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex gap-8 text-sm text-gray-300">
+            <a href="#" class="hover:text-primary">Home</a>
+            <a href="#about" class="hover:text-primary">About</a>
+            <a href="#services" class="hover:text-primary">Services</a>
+            <a href="#operations" class="hover:text-primary">Operations</a>
+            <a href="#contact" class="hover:text-primary">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button / Cross -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300 text-2xl relative">
+            <i class="fa-solid fa-list-check" id="menu-icon"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <nav id="mobile-menu" class="md:hidden hidden flex-col bg-black text-gray-300 absolute right-6 mt-2 py-2 w-40 rounded-lg shadow-lg">
+        <a href="#" class="px-4 py-2 hover:bg-orange-500 hover:text-black rounded transition">Home</a>
+        <a href="#about" class="px-4 py-2 hover:bg-orange-500 hover:text-black rounded transition">About</a>
+        <a href="#services" class="px-4 py-2 hover:bg-orange-500 hover:text-black rounded transition">Services</a>
+        <a href="#operations" class="px-4 py-2 hover:bg-orange-500 hover:text-black rounded transition">Operations</a>
+        <a href="#contact" class="px-4 py-2 hover:bg-orange-500 hover:text-black rounded transition">Contact</a>
+    </nav>
+</header>
+
+
+
+
 
     <!-- ================= HERO ================= -->
     <section class="relative min-h-screen flex items-center">
-    <!-- Background Image + Gradient Overlay -->
-    <div class="absolute inset-0">
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images.jfif');"></div>
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-b from-orange-200/10 to-orange-500/30"></div>
-    </div>
-
-    <!-- Content -->
-    <div class="relative max-w-7xl mx-auto px-6 text-center">
-        <span class="inline-block border border-primary  px-4 py-1 text-xs tracking-widest mb-6 text-black">
-            GLOBAL LEADER IN CADMIUM EXTRACTION
-        </span>
-
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-6">
-            POWERING THE <br>
-            <span class="text-primary">FUTURE</span> <br>
-            OF INDUSTRY
-        </h1>
-
-        <p class="max-w-3xl mx-auto text-gray-400 mt-6 text-sm md:text-base">
-            Pioneering sustainable cadmium mining solutions with cutting-edge technology
-            and an unwavering commitment to environmental responsibility.
-        </p>
-
-        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#explore"><button  class="bg-primary text-black px-8 py-3 font-semibold flex items-center justify-center gap-2">
-                EXPLORE OPERATIONS <i class="fa-solid fa-arrow-right"></i>
-            </button></a>
-
-            <button class="border border-white/30 px-8 py-3 hover:border-primary transition">
-                LEARN MORE
-            </button>
+        <!-- Background Image + Gradient Overlay -->
+        <div class="absolute inset-0">
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images.jfif');"></div>
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-orange-200/10 to-orange-500/30"></div>
         </div>
-    </div>
-</section>
+
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block border border-primary  px-4 py-1 text-xs tracking-widest mb-6 text-black">
+                GLOBAL LEADER IN CADMIUM EXTRACTION
+            </span>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-6">
+                POWERING THE <br>
+                <span class="text-primary">FUTURE</span> <br>
+                OF INDUSTRY
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-gray-400 mt-6 text-sm md:text-base">
+                Pioneering sustainable cadmium mining solutions with cutting-edge technology
+                and an unwavering commitment to environmental responsibility.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#explore"><button
+                        class="bg-primary text-black px-8 py-3 font-semibold flex items-center justify-center gap-2">
+                        EXPLORE OPERATIONS <i class="fa-solid fa-arrow-right"></i>
+                    </button></a>
+
+                <button class="border border-white/30 px-8 py-3 hover:border-primary transition">
+                    LEARN MORE
+                </button>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -280,7 +297,7 @@
 
     <!-- Smart operation section -->
 
-    <section class="bg-[#0b0f14] text-white py-20 mt-10 px-4" id="operations" >
+    <section class="bg-[#0b0f14] text-white py-20 mt-10 px-4" id="operations">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <!-- Text -->
@@ -315,42 +332,42 @@
 
     <!--  World eide present section  -->
 
-   <section id="explore">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="explore">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <!-- Left -->
-    <div>
-        <p class="text-orange-500 text-sm uppercase tracking-widest">Global Operations</p>
-        <h2 class="text-4xl md:text-5xl font-bold mt-4">
-            Worldwide <span class="text-orange-500">Presence</span>
-        </h2>
-        <p class="text-gray-400 mt-6">
-            With operations spanning across multiple continents, CadmiumCore maintains a strategic presence in
-            the world’s most significant cadmium-producing regions.
-        </p>
+            <div>
+                <p class="text-orange-500 text-sm uppercase tracking-widest">Global Operations</p>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4">
+                    Worldwide <span class="text-orange-500">Presence</span>
+                </h2>
+                <p class="text-gray-400 mt-6">
+                    With operations spanning across multiple continents, CadmiumCore maintains a strategic presence in
+                    the world’s most significant cadmium-producing regions.
+                </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-            <div class="bg-[#111722] p-4 border border-gray-800">📍 Australia — 4 sites · Active</div>
-            <div class="bg-[#111722] p-4 border border-gray-800">📍 Canada — 3 sites · Active</div>
-            <div class="bg-[#111722] p-4 border border-gray-800">📍 China — 5 sites · Active</div>
-            <div class="bg-[#111722] p-4 border border-gray-800">📍 Peru — 2 sites · Active</div>
-            <div class="bg-[#111722] p-4 border border-gray-800">📍 South Africa — 3 sites · Active</div>
-            <div class="bg-[#111722] p-4 border border-gray-800">📍 Kazakhstan — 2 sites · Developing</div>
-        </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    <div class="bg-[#111722] p-4 border border-gray-800">📍 Australia — 4 sites · Active</div>
+                    <div class="bg-[#111722] p-4 border border-gray-800">📍 Canada — 3 sites · Active</div>
+                    <div class="bg-[#111722] p-4 border border-gray-800">📍 China — 5 sites · Active</div>
+                    <div class="bg-[#111722] p-4 border border-gray-800">📍 Peru — 2 sites · Active</div>
+                    <div class="bg-[#111722] p-4 border border-gray-800">📍 South Africa — 3 sites · Active</div>
+                    <div class="bg-[#111722] p-4 border border-gray-800">📍 Kazakhstan — 2 sites · Developing</div>
+                </div>
 
-        <!-- <button class="mt-8 px-6 py-3 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black transition">
+                <!-- <button class="mt-8 px-6 py-3 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black transition">
         View All Locations →
       </button> -->
 
-    </div>
+            </div>
 
-    <!-- Image Placeholder -->
-    <div
-        class="bg-[#111722] h-[350px] md:h-[450px] flex items-center justify-center text-gray-500 border border-gray-800">
-        <img src="assets/machinery-BSpMFR6f.jpg" alt="Image" class="w-full h-full object-cover">
-    </div>
+            <!-- Image Placeholder -->
+            <div
+                class="bg-[#111722] h-[350px] md:h-[450px] flex items-center justify-center text-gray-500 border border-gray-800">
+                <img src="assets/machinery-BSpMFR6f.jpg" alt="Image" class="w-full h-full object-cover">
+            </div>
 
-    </div>
+        </div>
     </section>
 
 
@@ -548,6 +565,8 @@
         </div>
     </footer>
 
+
+    <script src="index.js"></script>
 </body>
 
 </html>
