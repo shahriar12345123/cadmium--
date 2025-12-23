@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CadmiumCore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff8c1a',
+                        darkbg: '#0e1116',
+                        darkcard: '#161a21'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-darkbg text-white font-sans bg-black">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="border-b border-white/10 bg-black">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-orange-500 text-black font-bold px-3 py-1">Cd</div>
+                <span class="font-semibold text-3xl tracking-wide">
+                    CADMIUM<span class="text-orange-500">CORE</span>
+                </span>
+            </div>
+
+            <nav class="hidden md:flex gap-8 text-sm text-gray-300">
+                <a href="#" class="hover:text-primary">Home</a>
+                <a href="#" class="hover:text-primary">About</a>
+                <a href="#" class="hover:text-primary">Services</a>
+                <a href="#" class="hover:text-primary">Operations</a>
+                <a href="#" class="hover:text-primary">Contact</a>
+            </nav>
+
+            <button
+                class="border border-orange-500 text-orange-500 px-4 py-2 text-sm hover:bg-primary hover:text-black transition">
+                GET QUOTE
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="relative min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-b from-orange-500/30 to-orange-200/10"></div>
+
+
+        <div class="relative max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block border border-primary text-primary px-4 py-1 text-xs tracking-widest mb-6">
+                GLOBAL LEADER IN CADMIUM EXTRACTION
+            </span>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-6">
+                POWERING THE <br>
+                <span class="text-primary">FUTURE</span> <br>
+                OF INDUSTRY
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-gray-400 mt-6 text-sm md:text-base">
+                Pioneering sustainable cadmium mining solutions with cutting-edge technology
+                and an unwavering commitment to environmental responsibility.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-primary text-black px-8 py-3 font-semibold flex items-center justify-center gap-2">
+                    EXPLORE OPERATIONS <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button class="border border-white/30 px-8 py-3 hover:border-primary transition">
+                    LEARN MORE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="py-20 bg-[#0c0f14] mt-5">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- IMAGE PLACEHOLDER -->
+            <div class="border border-primary/40 h-[420px] overflow-hidden">
+                <img src="assets/extraction-process-DS0uFDSd.jpg" alt="Image" class="w-full h-full object-cover">
+            </div>
+
+
+            <div>
+                <span class="text-primary text-xs tracking-widest mt-3">ABOUT US</span>
+
+                <h2 class="text-4xl font-bold mt-4">
+                    DECADES OF <span class="text-primary">EXCELLENCE</span>
+                </h2>
+
+                <p class="text-gray-400 mt-6 text-sm leading-relaxed">
+                    Since 1985, CadmiumCore has been at the forefront of cadmium mining innovation.
+                    Our integrated approach combines advanced extraction technologies with
+                    sustainable practices, ensuring we meet global demand while preserving our planet.
+                </p>
+
+                <div class="grid sm:grid-cols-2 gap-6 mt-8">
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-shield-halved text-primary text-xl"></i>
+                        <div>
+                            <h4 class="font-semibold">Safety First</h4>
+                            <p class="text-gray-400 text-sm">
+                                Industry-leading safety protocols.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-leaf text-primary text-xl"></i>
+                        <div>
+                            <h4 class="font-semibold">Sustainable</h4>
+                            <p class="text-gray-400 text-sm">
+                                Minimizing environmental impact.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-certificate text-primary text-xl"></i>
+                        <div>
+                            <h4 class="font-semibold">Certified</h4>
+                            <p class="text-gray-400 text-sm">
+                                ISO 14001 & OHSAS 18001.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-globe text-primary text-xl"></i>
+                        <div>
+                            <h4 class="font-semibold">Global Reach</h4>
+                            <p class="text-gray-400 text-sm">
+                                Operating across 12 countries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="py-20 bg-black gap-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-primary text-xs tracking-widest">OUR IMPACT</span>
+
+            <h2 class="text-4xl font-bold mt-4">
+                NUMBERS THAT <span class="text-primary">MATTER</span>
+            </h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+
+                <div class="bg-darkcard p-8 border border-white/50">
+                    <h3 class="text-primary text-4xl font-bold">25K+</h3>
+                    <p class="text-gray-400 mt-2 text-sm">TONNES PRODUCED ANNUALLY</p>
+                </div>
+
+                <div class="bg-darkcard p-8 border border-white/50">
+                    <h3 class="text-primary text-4xl font-bold">12</h3>
+                    <p class="text-gray-400 mt-2 text-sm">COUNTRIES OF OPERATION</p>
+                </div>
+
+                <div class="bg-darkcard p-8 border border-white/50">
+                    <h3 class="text-primary text-4xl font-bold">99.9%</h3>
+                    <p class="text-gray-400 mt-2 text-sm">PURITY GRADE</p>
+                </div>
+
+                <div class="bg-darkcard p-8 border border-white/50">
+                    <h3 class="text-primary text-4xl font-bold">3,500+</h3>
+                    <p class="text-gray-400 mt-2 text-sm">SKILLED PROFESSIONALS</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- our services -->
+
+    <section class="bg-[#0b0f14] text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <p class="text-orange-500 tracking-widest text-sm uppercase">What We Do</p>
+            <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                Our <span class="text-orange-500">Services</span>
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-4">
+                Comprehensive mining solutions from exploration to delivery, backed by decades of industry expertise.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Card -->
+            <div class="bg-[#111722] border border-gray-800 p-8 hover:border-orange-500 transition">
+                <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-mountain text-orange-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Exploration</h3>
+                <p class="text-gray-400">
+                    Advanced geological surveys and exploration techniques to identify high-yield deposits.
+                </p>
+            </div>
+
+            <div class="bg-[#111722] border border-orange-500 p-8">
+                <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-industry text-orange-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Extraction</h3>
+                <p class="text-gray-400">
+                    State-of-the-art mining operations with minimal environmental footprint.
+                </p>
+            </div>
+
+            <div class="bg-[#111722] border border-gray-800 p-8 hover:border-orange-500 transition">
+                <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-flask-vial text-orange-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Processing</h3>
+                <p class="text-gray-400">
+                    High-purity refining processes ensuring 99.9% cadmium quality standards.
+                </p>
+            </div>
+
+            <div class="bg-[#111722] border border-gray-800 p-8 hover:border-orange-500 transition">
+                <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-recycle text-orange-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Recycling</h3>
+                <p class="text-gray-400">
+                    Sustainable cadmium recovery from industrial waste and batteries.
+                </p>
+            </div>
+
+            <div class="bg-[#111722] border border-gray-800 p-8 hover:border-orange-500 transition">
+                <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-truck-fast text-orange-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Logistics</h3>
+                <p class="text-gray-400">
+                    Global distribution network ensuring timely delivery worldwide.
+                </p>
+            </div>
+
+            <div class="bg-[#111722] border border-gray-800 p-8 hover:border-orange-500 transition">
+                <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-chart-line text-orange-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Consulting</h3>
+                <p class="text-gray-400">
+                    Expert advisory services for mining operations and sustainability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Smart operation section -->
+
+    <section class="bg-[#0b0f14] text-white py-20 mt-10 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Text -->
+            <div>
+                <p class="text-orange-500 text-sm uppercase tracking-widest">Technology</p>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4">
+                    Smart <span class="text-orange-500">Operations</span>
+                </h2>
+                <p class="text-gray-400 mt-6">
+                    Our operations are monitored 24/7 through advanced control systems, utilizing AI-powered analytics
+                    to optimize extraction efficiency and ensure workplace safety.
+                </p>
+
+                <ul class="mt-6 space-y-3 text-gray-300">
+                    <li>▪ Real-time monitoring systems</li>
+                    <li>▪ AI-powered predictive maintenance</li>
+                    <li>▪ Automated safety protocols</li>
+                    <li>▪ Environmental impact tracking</li>
+                </ul>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div
+                class="bg-[#111722] h-[350px] md:h-[420px] flex items-center justify-center text-gray-500 border border-gray-800">
+                <img src="assets/Screenshot (598).png" alt="img" class="w-full h-full object-cover">
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Global operations section -->
+     
+
+    
+
+            
+    <div>
+        <p class="text-orange-500 text-sm uppercase tracking-widest">Global Operations</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-4">
+            Worldwide <span class="text-orange-500">Presence</span>
+        </h2>
+        <p class="text-gray-400 mt-6">
+            With operations spanning across multiple continents, CadmiumCore maintains a strategic presence in
+            the world’s most significant cadmium-producing regions.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            <div class="bg-[#111722] p-4 border border-gray-800">📍 Australia — 4 sites · Active</div>
+            <div class="bg-[#111722] p-4 border border-gray-800">📍 Canada — 3 sites · Active</div>
+            <div class="bg-[#111722] p-4 border border-gray-800">📍 China — 5 sites · Active</div>
+            <div class="bg-[#111722] p-4 border border-gray-800">📍 Peru — 2 sites · Active</div>
+            <div class="bg-[#111722] p-4 border border-gray-800">📍 South Africa — 3 sites · Active</div>
+            <div class="bg-[#111722] p-4 border border-gray-800">📍 Kazakhstan — 2 sites · Developing</div>
+        </div>
+
+        <!-- <button class="mt-8 px-6 py-3 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black transition">
+        View All Locations →
+      </button> -->
+
+    </div>
+
+    <!-- Image Placeholder -->
+    <div
+        class="bg-[#111722] h-[350px] md:h-[450px] flex items-center justify-center text-gray-500 border border-gray-800">
+        <img src="assets/machinery-BSpMFR6f.jpg" alt="Image" class="w-full h-full object-cover">
+    </div>
+
+    </div>
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section class="bg-[#0b0e13] py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <p class="text-orange-500 text-sm tracking-widest mb-4">GET IN TOUCH</p>
+
+                    <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+                        LET'S <span class="text-orange-500">CONNECT</span>
+                    </h2>
+
+                    <p class="text-gray-400 max-w-xl mb-10">
+                        Whether you're looking for a reliable cadmium supplier or interested in
+                        partnership opportunities, our team is ready to assist you.
+                    </p>
+
+                    <!-- INFO ITEMS -->
+                    <div class="space-y-6">
+
+                        <div class="flex items-start gap-4">
+                            <span class="text-orange-500 text-lg">
+                                <i class="fas fa-location-dot"></i>
+                            </span>
+                            <div>
+                                <h4 class="text-white font-semibold">Headquarters</h4>
+                                <p class="text-gray-400 text-sm">
+                                    1250 Industrial Boulevard<br />
+                                    Melbourne, VIC 3000, Australia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <span class="text-orange-500 text-lg">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <div>
+                                <h4 class="text-white font-semibold">Phone</h4>
+                                <p class="text-gray-400 text-sm">+61 3 9000 0000</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <span class="text-orange-500 text-lg">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <div>
+                                <h4 class="text-white font-semibold">Email</h4>
+                                <p class="text-gray-400 text-sm">contact@cadmiumcore.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="bg-[#111827] border border-gray-800 rounded-lg p-8 lg:p-10">
+                    <h3 class="text-white text-xl font-semibold mb-8">
+                        Request a Quote
+                    </h3>
+
+                    <form class="space-y-6">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-gray-400 text-sm mb-2 block">Full Name</label>
+                                <input type="text" placeholder="Your Name"
+                                    class="w-full bg-[#0b0e13] border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
+                            </div>
+
+                            <div>
+                                <label class="text-gray-400 text-sm mb-2 block">Email Address</label>
+                                <input type="email" placeholder="alpha@bita.com"
+                                    class="w-full bg-[#0b0e13] border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="text-gray-400 text-sm mb-2 block">Company Name</label>
+                            <input type="text" placeholder="Your Company name"
+                                class="w-full bg-[#0b0e13] border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
+                        </div>
+
+                        <div>
+                            <label class="text-gray-400 text-sm mb-2 block">Message</label>
+                            <textarea rows="4" placeholder="Tell us about your requirements..."
+                                class="w-full bg-[#0b0e13] border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 resize-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-orange-500 hover:bg-orange-600 transition text-black font-semibold py-4 rounded-md flex items-center justify-center gap-2">
+                            SEND MESSAGE
+                            <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-[#0b0e13] text-gray-300 pt-16 pb-6">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- TOP GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-800 pb-12">
+
+                <!-- BRAND -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="bg-orange-500 text-black font-bold px-3 py-1 rounded">Cd</span>
+                        <span class="text-lg font-semibold tracking-wide">
+                            CADMIUM<span class="text-orange-500">CORE</span>
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Pioneering sustainable cadmium mining solutions since 1985.
+                        Committed to excellence, safety, and environmental responsibility.
+                    </p>
+
+                    <div class="flex gap-4 mt-6">
+                        <a class="bg-[#111827] p-2 rounded hover:bg-orange-500 hover:text-black transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="bg-[#111827] p-2 rounded hover:bg-orange-500 hover:text-black transition">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a class="bg-[#111827] p-2 rounded hover:bg-orange-500 hover:text-black transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="bg-[#111827] p-2 rounded hover:bg-orange-500 hover:text-black transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COMPANY -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-orange-500 transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Our Team</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">News</a></li>
+                    </ul>
+                </div>
+
+                <!-- SERVICES -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-orange-500 transition">Exploration</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Extraction</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Processing</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- RESOURCES -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-orange-500 transition">Documentation</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Safety Reports</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Investor Relations</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM BAR -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-6 text-sm text-gray-500">
+                <p>© 2025 CadmiumCore Industries. All rights reserved.</p>
+
+                <div class="flex gap-5">
+                    <a href="#" class="hover:text-orange-500 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-orange-500 transition">Terms of Service</a>
+                    <a href="#" class="hover:text-orange-500 transition">Cookie Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
