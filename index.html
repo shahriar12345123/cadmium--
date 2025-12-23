@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/80384067ee.js" crossorigin="anonymous"></script>
 
     <script>
         tailwind.config = {
@@ -41,14 +41,14 @@
 
             <nav class="hidden md:flex gap-8 text-sm text-gray-300">
                 <a href="#" class="hover:text-primary">Home</a>
-                <a href="#" class="hover:text-primary">About</a>
-                <a href="#" class="hover:text-primary">Services</a>
-                <a href="#" class="hover:text-primary">Operations</a>
-                <a href="#" class="hover:text-primary">Contact</a>
+                <a href="#about" class="hover:text-primary">About</a>
+                <a href="#services" class="hover:text-primary">Services</a>
+                <a href="#operations" class="hover:text-primary">Operations</a>
+                <a href="#contact" class="hover:text-primary">Contact</a>
             </nav>
 
             <button
-                class="border border-orange-500 text-orange-500 px-4 py-2 text-sm hover:bg-primary hover:text-black transition">
+                class="border border-orange-500 text-orange-500 px-4 py-2 text-sm hover:border-sky-500 hover:bg-black hover:text-sky-500 transition">
                 GET QUOTE
             </button>
         </div>
@@ -56,39 +56,47 @@
 
     <!-- ================= HERO ================= -->
     <section class="relative min-h-screen flex items-center">
-        <div class="absolute inset-0 bg-gradient-to-b from-orange-500/30 to-orange-200/10"></div>
+    <!-- Background Image + Gradient Overlay -->
+    <div class="absolute inset-0">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images.jfif');"></div>
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-orange-200/10 to-orange-500/30"></div>
+    </div>
 
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto px-6 text-center">
+        <span class="inline-block border border-primary text-primary px-4 py-1 text-xs tracking-widest mb-6">
+            GLOBAL LEADER IN CADMIUM EXTRACTION
+        </span>
 
-        <div class="relative max-w-7xl mx-auto px-6 text-center">
-            <span class="inline-block border border-primary text-primary px-4 py-1 text-xs tracking-widest mb-6">
-                GLOBAL LEADER IN CADMIUM EXTRACTION
-            </span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-6">
+            POWERING THE <br>
+            <span class="text-primary">FUTURE</span> <br>
+            OF INDUSTRY
+        </h1>
 
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-6">
-                POWERING THE <br>
-                <span class="text-primary">FUTURE</span> <br>
-                OF INDUSTRY
-            </h1>
+        <p class="max-w-3xl mx-auto text-gray-400 mt-6 text-sm md:text-base">
+            Pioneering sustainable cadmium mining solutions with cutting-edge technology
+            and an unwavering commitment to environmental responsibility.
+        </p>
 
-            <p class="max-w-3xl mx-auto text-gray-400 mt-6 text-sm md:text-base">
-                Pioneering sustainable cadmium mining solutions with cutting-edge technology
-                and an unwavering commitment to environmental responsibility.
-            </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#explore"><button  class="bg-primary text-black px-8 py-3 font-semibold flex items-center justify-center gap-2">
+                EXPLORE OPERATIONS <i class="fa-solid fa-arrow-right"></i>
+            </button></a>
 
-            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-primary text-black px-8 py-3 font-semibold flex items-center justify-center gap-2">
-                    EXPLORE OPERATIONS <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <button class="border border-white/30 px-8 py-3 hover:border-primary transition">
-                    LEARN MORE
-                </button>
-            </div>
+            <button class="border border-white/30 px-8 py-3 hover:border-primary transition">
+                LEARN MORE
+            </button>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- ================= ABOUT ================= -->
-    <section class="py-20 bg-[#0c0f14] mt-5">
+    <section class="py-20 bg-[#0c0f14] mt-5" id="about">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
             <!-- IMAGE PLACEHOLDER -->
@@ -193,7 +201,7 @@
 
     <!-- our services -->
 
-    <section class="bg-[#0b0f14] text-white py-20 px-4">
+    <section class="bg-[#0b0f14] text-white py-20 px-4" id="services">
         <div class="max-w-7xl mx-auto text-center mb-16">
             <p class="text-orange-500 tracking-widest text-sm uppercase">What We Do</p>
             <h2 class="text-4xl md:text-5xl font-bold mt-3">
@@ -272,7 +280,7 @@
 
     <!-- Smart operation section -->
 
-    <section class="bg-[#0b0f14] text-white py-20 mt-10 px-4">
+    <section class="bg-[#0b0f14] text-white py-20 mt-10 px-4" id="operations" >
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <!-- Text -->
@@ -305,12 +313,12 @@
     </section>
 
 
-    <!-- Global operations section -->
-     
+    <!--  World eide present section  -->
 
-    
+   <section id="explore">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            
+            <!-- Left -->
     <div>
         <p class="text-orange-500 text-sm uppercase tracking-widest">Global Operations</p>
         <h2 class="text-4xl md:text-5xl font-bold mt-4">
@@ -348,7 +356,7 @@
 
     <!-- Contact Section -->
 
-    <section class="bg-[#0b0e13] py-20 px-4">
+    <section class="bg-[#0b0e13] py-20 px-4" id="contact">
         <div class="max-w-7xl mx-auto">
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -398,7 +406,7 @@
                             </span>
                             <div>
                                 <h4 class="text-white font-semibold">Email</h4>
-                                <p class="text-gray-400 text-sm">contact@cadmiumcore.com</p>
+                                <p class="text-gray-400 text-sm">shahriarbinrifat1@gmail.com</p>
                             </div>
                         </div>
 
